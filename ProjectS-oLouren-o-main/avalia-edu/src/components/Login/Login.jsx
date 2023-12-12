@@ -114,7 +114,7 @@ const Login = () => {
 
         {/* condicional(&&) simples aqui do jsx, só ta verificando se o input está vazio */}
         {cpf === '' && (
-          <p id='paragrafo1'><strong>Apenas números</strong></p>
+          <p id='paragrafo1'><strong>*Apenas números</strong></p>
         )}
 
         <p id='paragrafo2' style={{ display: error ? 'flex' : 'none', color: 'red', fontSize: '14px' }}><strong>*CPF inválido.</strong></p>
