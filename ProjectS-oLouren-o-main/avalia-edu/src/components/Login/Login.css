@@ -1,0 +1,51 @@
+.login{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    max-width: 100%;
+}
+
+.section-input{
+    padding: 50px;
+    border-radius: 8px;
+    border: 5px solid var(--azul2);
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input{
+    font-size: 1em;
+    padding: 10px;
+}
+
+p{
+    font-size: 14px;
+    margin: 0;
+}
+
+button{
+    padding: 8px;
+    background-color: var(--azul5);
+    color: var(--branco);
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+#paragrafo2{
+    display: none;
+}
+#paragrafo3{
+    display: none;
+}
