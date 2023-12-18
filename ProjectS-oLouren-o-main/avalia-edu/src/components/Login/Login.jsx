@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
 import SectionText from '../SectionText/SectionText';
 
+import { useNavigate } from 'react-router-dom';
 import './Login.css'
 
 
 const Login = () => {
   const [cpf, setCpf] = useState('');
   const [error, setError] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false);
+  const navigate = useNavigate()
+  
+  // redirecionamento para home sendo chamado lá embaixo, na validação do cpf
+  // aqui nessa função alem de falar pra onde será o redirecionamento,atualiza a autenticação
+  const handleNavigate = () => {
+     setAuthenticated(true);
+     navigate('/home')
+  }
 
   const handleInputChange = (e) => {
     const { value } = e.target;
@@ -86,11 +96,16 @@ const Login = () => {
       paragrafo3.style.display = 'flex'
       paragrafo3.style.color = 'green'
       paragrafo3.style.fontSize = '14px'
-
-      alert('Login bem-sucedido!'); // Simples alerta para representar o login bem-sucedido
-      window.location.href = '/home/home.html'; //redirecionamento para home, que esta na pasta public
+      
+      alert('Login bem-sucedido!');
+      handleNavigate()
     }
   };
+
+  // e aqui depois de atualizar pra verdadeiro lá na função handleNavigate,esconde a pagina de login retornando null
+  if (authenticated) {
+    return null;
+  }
 
 
   return (
@@ -112,7 +127,7 @@ const Login = () => {
           />
         </label>
 
-        {/* condicional(&&) simples aqui do jsx, só ta verificando se o input está vazio */}
+        {/* condicional(&&) aqui do jsx, só ta verificando se o input está vazio */}
         {cpf === '' && (
           <p id='paragrafo1'><strong>*Apenas números</strong></p>
         )}

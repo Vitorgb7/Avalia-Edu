@@ -1,5 +1,22 @@
 .SectionText{
-    max-width: 100%;
     max-height: fit-content;
-    margin: 192px 0 0 0;
+    position: relative;
+    display: inline-block;   
+}
+
+.SectionText img{
+    max-width: 100%;
+    height: 90vh;
+
+}
+
+.text-section-text{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    z-index: 1;
 }
