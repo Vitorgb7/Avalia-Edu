@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='Footer'>
         <section>
             <p>
-                Copyright &copy; Secretaria de Educação de São Lourenço da Mata
+            &copy; Copyright 2023 Prefeitura Municipal de São Lourenço da Mata | Todos os direitos reservados
             </p>
         </section>
     </div>
