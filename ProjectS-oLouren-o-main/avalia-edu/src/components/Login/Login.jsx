@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SectionText from '../SectionText/SectionText';
+import SectionText from './SectionText/SectionText';
 
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
@@ -8,13 +8,10 @@ import './Login.css'
 const Login = () => {
   const [cpf, setCpf] = useState('');
   const [error, setError] = useState(false);
-  const [authenticated, setAuthenticated] = useState(false);
   const navigate = useNavigate()
   
   // redirecionamento para home sendo chamado lá embaixo, na validação do cpf
-  // aqui nessa função alem de falar pra onde será o redirecionamento,atualiza a autenticação
   const handleNavigate = () => {
-     setAuthenticated(true);
      navigate('/home')
   }
 
@@ -101,11 +98,6 @@ const Login = () => {
       handleNavigate()
     }
   };
-
-  // e aqui depois de atualizar pra verdadeiro lá na função handleNavigate,esconde a pagina de login retornando null
-  if (authenticated) {
-    return null;
-  }
 
 
   return (
