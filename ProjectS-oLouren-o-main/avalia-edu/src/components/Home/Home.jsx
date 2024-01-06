@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer'
 import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
+import SectionSalas from '../SectionSalas/SectionSalas';
 import './Home.css'
 
 
@@ -46,7 +47,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <Navbar />
-      <h1>home</h1>
+      <SectionSalas />
       <Outlet/>
       <Footer />
     </div>

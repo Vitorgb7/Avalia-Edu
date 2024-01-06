@@ -33,3 +33,17 @@
     margin: 0;
     padding: 10px 15px;    
 }
+
+.Navbar .btn-logout{
+    margin-right: 10px;
+    color: var(--preto);
+    border-radius: 8px;
+    border: 2px solid var(--preto);
+    background-color: var(--branco);
+    transition: 1s;
+}
+
+.Navbar .btn-logout:hover{
+    transform: translateY(0px);
+    border-radius: 0px;
+}
