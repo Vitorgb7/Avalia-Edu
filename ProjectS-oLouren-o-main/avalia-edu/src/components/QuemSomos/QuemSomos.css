@@ -1,0 +1,54 @@
+.QuemSomos .titulo-principal {
+    text-align: center;
+  }
+  
+  .QuemSomos h3 {
+    text-align: center;
+  }
+  
+  .imagem-quem-somos {
+    max-width: 100%;
+    height: 50vh;
+  }
+  
+  .section-principal {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-principal p {
+    max-width: 60%;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid var(--preto);
+  }
+  
+  /* Estilo para o botão "Ler mais" */
+  .section-principal button {
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 1px solid var(--preto);
+    border-radius: 4px;
+    cursor: pointer;
+    transform: none;
+  }
+  
+  @keyframes flutuar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animacao-flutuante {
+    animation: flutuar 2s infinite;
+  }
+  

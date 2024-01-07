@@ -19,8 +19,8 @@ const Navbar = () => {
             <h1><img src="/logo.png" alt="logo" id='logo'/></h1>
             <ul>
                 <li><Link to={'/home'}>Home</Link></li>
-                <li><Link to={'/Contact'}>Quem Somos</Link></li>
-                <li><Link to={'/exemple'}>Desenvolvedores</Link></li>
+                <li><Link to={'/Quem-Somos'}>Quem Somos</Link></li>
+                <li><Link to={'/Membros'}>Desenvolvedores</Link></li>
             </ul>
             <button className='btn-logout' onClick={handleLogout}>Sair</button>
         </nav>

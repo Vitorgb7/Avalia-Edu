@@ -8,9 +8,9 @@ const NavbarLogin = () => {
         <nav className="navegation-navbar-login">
         <h1><img src="/logo.png" alt="logo" id='logo'/></h1>
             <ul>
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/'}>Quem Somos</Link></li>
-                <li><Link to={'/'}>Desenvolvedores</Link></li>
+                <li><Link to={'/'}>Inicio</Link></li>
+                <li><Link to={'/Quem-Somos'}>Quem Somos</Link></li>
+                <li><Link to={'/Membros'}>Desenvolvedores</Link></li>
             </ul>
         </nav>
 
