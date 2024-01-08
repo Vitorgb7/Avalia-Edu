@@ -8,7 +8,7 @@
 }
 
 #logo{
-    max-width: 15%;
+    max-width: 15% !important;
 }
 
 .navbar-login ul{

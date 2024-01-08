@@ -12,18 +12,20 @@
   }
   
   .section-principal {
-    margin: 20px;
+    margin: 0px 0 30px 100px;
     display: flex;
     align-items: center;
   }
   
   .section-principal p {
     max-width: 60%;
-    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 8px;
     padding: 8px;
     border: 1px solid var(--preto);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
   }
   
   /* Estilo para o botão "Ler mais" */
@@ -49,6 +51,7 @@
   }
   
   .animacao-flutuante {
+    margin-right: 60px;
     animation: flutuar 2s infinite;
   }
   

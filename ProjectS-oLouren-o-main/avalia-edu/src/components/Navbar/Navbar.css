@@ -7,25 +7,12 @@
     margin-bottom: 0;
 }
 
-#logo{
-    max-width: 15%;
+#logo-nav-home{
+    max-width: 11% !important;
 }
 
-.Navbar ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5em;
-    padding: 0 50px;
-}
-
-.Navbar li{
-    list-style: none;
-}
-
-.Navbar a{
-    text-decoration: none;
-    color: var(--preto);
+.Navbar h2{
+    margin: 40px;
 }
 
 .Navbar h1{

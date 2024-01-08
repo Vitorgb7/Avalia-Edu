@@ -9,15 +9,20 @@ import './Membros.css';
 const Membros = () => {
   const location = useLocation()
 
-  const Pessoa = ({ nome, cargo, idade, descricao, foto }) => (
+  const Pessoa = ({ nome, cargo, descricao, foto, link }) => (
+
     <div className='Pessoa'>
+      <a href={link} target="_blank" rel="noopener noreferrer"> 
+      
       <div className="text-membros">
       <h2>{nome}</h2>
       <img src={foto} alt="desenvolvedores" className='foto-desenvolvedores'/>
       </div>
-        <p><strong>{cargo}</strong></p>
-        <p>Idade: {idade}</p>
-        <p>{descricao}</p>
+        <div className="text-membros-description">
+          <p><strong>{cargo}</strong></p>
+          <p>{descricao}</p>
+        </div>
+        </a>
     </div>
   );
 
@@ -31,45 +36,43 @@ const Membros = () => {
       <div className='TextoInicial'>
         <h1>Desenvolvedores</h1>
         <h3>AvaliaEdu - Impulsionando a Sabedoria e Inovação em São Lourenço da Mata, Pernambuco.</h3>
-        <p>As Mentes Criativas por Trás do AvaliaEdu.</p>
+        <p><strong>As Mentes Criativas por Trás do AvaliaEdu:</strong></p>
       </div>
       <div className='Equipe'>
         <Pessoa
           nome="João Alberto"
           cargo="Desenvolvedor Front-end"
-          idade={28}
           descricao="João é apaixonado por criar interfaces incríveis e experiências de usuário intuitivas."
+          foto= './joao-foto.jpg'
+          link='https://github.com/joaoalberto61'
         />
         <Pessoa
           nome="Vitor Gabriel"
           cargo="Desenvolvedor Front-end"
-          idade={19}
-          descricao="Vitor é especialista e apaixonado por tecnologia e pela criação de interfaces intuitivas."
+          descricao="Vitor é apaixonado por tecnologia e pela criação de interfaces intuitivas."
           foto= './vitor-foto.jpg'
+          link='https://github.com/Vitorgb7'
         />
         <Pessoa
           nome="Thaif Ramom"
           cargo="Designer UX/UI"
-          idade={25}
           descricao="Thaif combina sua habilidade artística com uma abordagem centrada no usuário para criar designs visualmente atraentes e funcionais."
           foto='./thaif-foto.jpg'
+          link='https://github.com/Thaif27'
         />
         <Pessoa
           nome="Janaina Lima"
           cargo="Analista de Dados"
-          idade={30}
           descricao="Jane possui expertise em analisar dados complexos e extrair insights valiosos para a tomada de decisões."
         />
         <Pessoa
           nome="Eduarda Gomes"
           cargo="Engenheira de Software"
-          idade={24}
-          descricao="Duda é uma engenheira de software dedicada, focada em desenvolver soluções inovadoras e eficientes."
+          descricao="Eduarda é uma engenheira de software dedicada, focada em desenvolver soluções inovadoras e eficientes."
         />
         <Pessoa
           nome="Saulo Ambrosio"
           cargo="Analista de QA"
-          idade={31}
           descricao="Saulo é responsável por garantir a qualidade do software, realizando testes rigorosos para identificar e corrigir possíveis problemas."
         />
       </div>

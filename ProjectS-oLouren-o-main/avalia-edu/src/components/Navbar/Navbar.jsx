@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,12 +16,9 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
         <nav className='navegation'>
-            <h1><img src="/logo.png" alt="logo" id='logo'/></h1>
-            <ul>
-                <li><Link to={'/home'}>Home</Link></li>
-                <li><Link to={'/Quem-Somos'}>Quem Somos</Link></li>
-                <li><Link to={'/Membros'}>Desenvolvedores</Link></li>
-            </ul>
+            <h1><img src="/logo.png" alt="logo" id='logo-nav-home'/></h1>
+            {/* sincronizar com o input do login para está sincronizado ao entrar na home (dados salvos no bd) */}
+            <h2>Usuário</h2>
             <button className='btn-logout' onClick={handleLogout}>Sair</button>
         </nav>
     </div>
