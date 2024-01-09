@@ -1,0 +1,28 @@
+.SectionImage {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Adiciona margem automática para centralizar */
+    
+  }
+  
+  .SectionImage img {
+    max-width: 350px;
+    height: auto;
+    display: block; 
+  }
+  
+  .section-image-two {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-70%);
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 400px; /* Define a largura máxima */
+  }
+  
+  .section-image-two img {
+    width: 100%;
+    height: auto;
+  }
+  

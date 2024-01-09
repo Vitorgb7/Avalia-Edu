@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import { useLocation } from 'react-router-dom';
 
 import './QuemSomos.css';
+import SectionImage from './SectionImage/SectionImage';
 
 const QuemSomos = () => {
   const location = useLocation();
@@ -44,7 +45,9 @@ const QuemSomos = () => {
             {mostrarTextoCompleto ? 'Ler menos' : 'Ler mais'}
           </button>
         </div>
+        
         <img src="./imagem-quem-somos.jpg" alt="imagem" className='imagem-quem-somos animacao-flutuante'/>
+        <SectionImage />
       </div>
       {isRedirect && <Footer />}
     </div>

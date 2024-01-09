@@ -54,7 +54,7 @@ const Membros = () => {
           link='https://github.com/Vitorgb7'
         />
         <Pessoa
-          nome="Thaif Ramom"
+          nome="Thaif Ramon"
           cargo="Designer UX/UI"
           descricao="Thaif combina sua habilidade artística com uma abordagem centrada no usuário para criar designs visualmente atraentes e funcionais."
           foto='./thaif-foto.jpg'
@@ -64,16 +64,22 @@ const Membros = () => {
           nome="Janaina Lima"
           cargo="Analista de Dados"
           descricao="Jane possui expertise em analisar dados complexos e extrair insights valiosos para a tomada de decisões."
+          foto='janaina-foto.jpg'
+          link='https://github.com/JanainaCosta23'
         />
         <Pessoa
           nome="Eduarda Gomes"
           cargo="Engenheira de Software"
           descricao="Eduarda é uma engenheira de software dedicada, focada em desenvolver soluções inovadoras e eficientes."
+          foto='eduarda-foto.jpg'
+          link='https://www.linkedin.com/in/maria-eduarda-gomes-849954162/'
         />
         <Pessoa
           nome="Saulo Ambrosio"
           cargo="Analista de QA"
           descricao="Saulo é responsável por garantir a qualidade do software, realizando testes rigorosos para identificar e corrigir possíveis problemas."
+          foto='saulo-foto.jpg'
+          link='https://github.com/sauloambrosio'
         />
       </div>
       <Outlet />     
