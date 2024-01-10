@@ -1,24 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navegation{
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #313131;
     margin-bottom: 0;
 }
 
-#logo-nav-home{
-    max-width: 11% !important;
+.Navbar .escola{
+    margin-right: 400px;
+    padding: 0 !important;
+    cursor: pointer;
 }
 
-.Navbar h2{
-    margin: 40px;
+#logo-nav-home{
+    max-width: 20% !important;
+    margin: 8px 0 !important;
+    padding: 0 !important;
+}
+
+.Navbar .usuario{
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 .Navbar h1{
     text-align: left;
     margin: 0;
-    padding: 10px 15px;    
+    padding: 0 0 0 10px;    
 }
 
 .Navbar .btn-logout{

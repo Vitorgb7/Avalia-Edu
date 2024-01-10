@@ -7,6 +7,7 @@
   
   .TextoInicial {
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   
@@ -17,7 +18,7 @@
   }
   
   .Pessoa {
-    width: 30%;
+    width: 35%;
     margin: 15px;
     padding: 20px;
     border: 2px solid #ccc;
