@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 
@@ -47,8 +47,10 @@ const Home = () => {
     <div className='Home'>
       <Navbar />
       
-      <Outlet/>
-      <Footer />
+      <Outlet />
+      <div className="footer-home">
+        <Footer />
+      </div>
     </div>
   )
 }

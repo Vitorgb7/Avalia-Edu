@@ -10,23 +10,19 @@ const Login = () => {
   const [error, setError] = useState(false);
   const navigate = useNavigate()
   
-  // redirecionamento para home sendo chamado lá embaixo, na validação do cpf
   const handleNavigate = () => {
      navigate('/home')
   }
 
   const handleInputChange = (e) => {
     const { value } = e.target;
-    // Removendo pontos e traços do CPF utilizando regex(expressões regulares)
     const cleanedValue = value.replace(/[^\d]/g, '');
     setCpf(cleanedValue);
 
-    // aqui ele limpa se tiver com erro no input
     setError(false)
   };
 
   const validateCPF = (cpf) => {
-    // utilizando regex também aqui para verificar se tem 11 digitos escritos no input
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
       return false;
     }
@@ -67,11 +63,9 @@ const Login = () => {
   };
 
 
-  // verifica se o CPF é válido usando a função validateCPF e exibe um alerta se não for válido.
   const handleLogin = () => {
-    // verificando se o CPF é válido
     if (!validateCPF(cpf)) {
-      // deixar a caixa do input com a borda vermelha para uma alusão de erro
+
       const inputCpf = document.getElementById('input-cpf')
       inputCpf.style.border = '3px solid red';
       
@@ -85,7 +79,7 @@ const Login = () => {
       
     }else{
       setError(false)
-       // deixar a caixa do input com a borda verde para uma alusão de acerto
+
       const inputCpf = document.getElementById('input-cpf')
       inputCpf.style.border = '3px solid green';
 
