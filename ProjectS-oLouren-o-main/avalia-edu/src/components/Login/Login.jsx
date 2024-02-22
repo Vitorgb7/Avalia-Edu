@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import SectionText from './SectionText/SectionText';
 
 import { useNavigate } from 'react-router-dom';
+
+import { getFunction } from '../../services/apiConfig'
 import './Login.css'
 
 
@@ -9,6 +11,14 @@ const Login = () => {
   const [cpf, setCpf] = useState('');
   const [error, setError] = useState(false);
   const navigate = useNavigate()
+
+
+  const btnGetFunctionClick = () => {
+    getFunction()
+    .then(data => console.log(data))
+    .catch(err => console.error(err))
+  }
+
   
   const handleNavigate = () => {
      navigate('/home')
@@ -79,6 +89,7 @@ const Login = () => {
       
     }else{
       setError(false)
+      btnGetFunctionClick()
 
       const inputCpf = document.getElementById('input-cpf')
       inputCpf.style.border = '3px solid green';

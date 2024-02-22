@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 
+
 import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
@@ -46,7 +47,6 @@ const Home = () => {
   return (
     <div className='Home'>
       <Navbar />
-      
       <Outlet />
       <div className="footer-home">
         <Footer />

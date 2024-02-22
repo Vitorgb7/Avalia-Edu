@@ -1,7 +1,6 @@
 import Login from './components/Login/Login';
 import NavbarLogin from './components/Navbar/NavbarLogin/NavbarLogin';
 import Footer from './components/Footer/Footer';
-import Membros from './components/Membros/Membros';
 import QuemSomos from './components/QuemSomos/QuemSomos';
 
 import { Outlet } from 'react-router-dom';
@@ -17,7 +16,6 @@ function App() {
       <hr></hr>
       <QuemSomos />
       <hr></hr>
-      <Membros /> 
       <Footer />
     </div>
   );
