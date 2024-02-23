@@ -3,6 +3,7 @@ import './Navbar.css'
 import { useNavigate } from 'react-router-dom'
 
 import EscolasList from '../Escolas/EscolasList';
+import GestoresList from '../Gestores/GestoresList'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Navbar = () => {
             <h1 className='escola'><EscolasList /></h1>
 
             {/* sincronizar com o input do login para está sincronizado ao entrar na home (dados salvos no bd) */}
-            <h2 className='usuario'>Usuário</h2>
+            <h2 className='usuario'><GestoresList /></h2>
             <button className='btn-logout' onClick={handleLogout}>Sair</button>
         </nav>
     </div>
