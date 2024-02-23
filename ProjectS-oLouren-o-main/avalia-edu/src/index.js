@@ -4,30 +4,44 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import Home from './components/Home/Home';
-import Membros from './components/Membros/Membros';
 import Login from './components/Login/Login';
-import UserProfile from './components/UserProfile/UserProfile'
-import TurmaDetails from './components/TurmaDetails/TurmaDetails';
-import EscolaDetails from './components/EscolaDetails/EscolaDetails';
-import RespostasDetails from './components/RespostasDetails/RespostasDetails';
+import QuemSomos from './components/QuemSomos/QuemSomos';
+import TurmasList from './components/Turmas/TumasList'
+import TurmaDetails from './components/Turmas/TurmaDetails'
+import GestoresDetails from './components/Gestores/GestoresDetails'
+import GestoresList from './components/Gestores/GestoresList'
+import EscolasList from './components/Escolas/EscolasList'
+import EscolasDetails from './components/Escolas/EscolasDetails'
+import AlunosDetails from './components/Alunos/AlunosDetails'
+import AlunosList from './components/Alunos/AlunosList'
 
 import{ createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import './index.css';
-import QuemSomos from './components/QuemSomos/QuemSomos';
 
 
 
 const router = createBrowserRouter([
   { path: '/', element: <App />},
   { path: '/login', element: <Login /> }, 
-  { path: '/:cpf', element: <UserProfile /> },
-  { path: '/:escolaId', element: <EscolaDetails /> },
-  { path: '/:escolaId/turmas/:turmaId', element: <TurmaDetails /> },
-  { path: '/:turmaId/respostas', element: <RespostasDetails /> },
   { path: '/home', element: <Home /> },
-  { path: '/Membros', element: <Membros /> },
   { path: '/Quem-somos', element: <QuemSomos /> },
+
+  {path: '/api/aluno', element: <AlunosList />},
+  {path: '/api/aluno/:id', element: <AlunosDetails />},
+
+
+  { path: '/api/escola', element: <EscolasList /> },
+  { path: '/api/escola:id', element: <EscolasDetails /> },
+
+  { path: '/api/gestor', element: <GestoresList /> },
+  { path: '/api/gestor:id', element: <GestoresDetails /> },
+
+  { path: '/api/turma', element: <TurmasList /> },
+  { path: '/api/turma:id', element: <TurmaDetails /> },
+
+  { path: '/api/escola', element: <EscolasList /> },
+  { path: '/api/escola:id', element: <EscolasDetails /> },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

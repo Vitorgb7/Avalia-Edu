@@ -10,7 +10,6 @@ const NavbarLogin = () => {
             <ul>
                 <li><Link to={'/'}>Inicio</Link></li>
                 <li><Link to={'/Quem-Somos'}>Quem Somos</Link></li>
-                <li><Link to={'/Membros'}>Desenvolvedores</Link></li>
             </ul>
         </nav>
 

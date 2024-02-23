@@ -47,7 +47,7 @@ const QuemSomos = () => {
         </div>
         
         <img src="./imagem-quem-somos.jpg" alt="imagem" className='imagem-quem-somos animacao-flutuante'/>
-        <SectionImage />
+        {/* <SectionImage /> */}
       </div>
       {isRedirect && <Footer />}
     </div>
