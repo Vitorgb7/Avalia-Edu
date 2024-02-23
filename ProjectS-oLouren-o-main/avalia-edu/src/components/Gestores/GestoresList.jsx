@@ -2,7 +2,7 @@ import React from 'react'
 
 const GestoresList = () => {
   return (
-    <div>vitor</div>
+    <div>gestor</div>
   )
 }
 
